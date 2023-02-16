@@ -47,7 +47,7 @@ RUN update-alternatives --config pip3
 #RUN apt install -y python3.9  python3.9-distutils && rm /etc/apt/sources.list.d/*
 #RUN update-alternatives --install /usr/local/bin/python3 python3 /usr/bin/python3.9 1
 #RUN update-alternatives --config python3
-#RUN ln -s /usr/bin/python3.11 /usr/local/bin/python3
+RUN ln -sf /usr/local/bin/python3.11 /usr/local/bin/python3.6
  
 #install other necessary package 
 RUN apt install curl
